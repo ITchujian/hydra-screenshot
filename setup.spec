@@ -1,0 +1,60 @@
+# -*- mode: python ; coding: utf-8 -*-
+
+
+a = Analysis(
+    ['main.py', 'Settings.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Views\\About.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Views\\__init__.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Views\\BaseWindow.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Views\\LongScreenshot.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Views\\LongToolBar.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Views\\MainWindow.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Views\\ScreenArea.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Views\\SettingView.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Views\\ToolBar.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Functions\\__init__.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Functions\\CircleNumber.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Functions\\ColorSelector.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Functions\\CustomBrush.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Functions\\FontSelector.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Functions\\PicMatcher.py',
+    'E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR\\Functions\\TextInput.py',
+    ],
+    pathex=['E:\\Users\\QinYu6\\Documents\\PythonProject\\hydraSCR'],
+    binaries=[],
+    datas=[],
+    hiddenimports=[],
+    hookspath=[],
+    hooksconfig={},
+    runtime_hooks=[],
+    excludes=[],
+    noarchive=False,
+)
+pyz = PYZ(a.pure)
+
+exe = EXE(
+    pyz,
+    a.scripts,
+    [],
+    exclude_binaries=True,
+    name='HydraSCR',
+    debug=False,
+    bootloader_ignore_signals=False,
+    strip=False,
+    upx=True,
+    console=False,
+    disable_windowed_traceback=False,
+    argv_emulation=False,
+    target_arch=None,
+    codesign_identity=None,
+    entitlements_file=None,
+)
+coll = COLLECT(
+    exe,
+    a.binaries,
+    a.datas,
+    strip=False,
+    upx=True,
+    upx_exclude=[],
+    name='hydraSCR',
+)

@@ -1,0 +1,114 @@
+/* QTabWidget */
+QTabWidget::pane {
+    border: none;
+}
+QTabWidget::tab-bar {
+    alignment: center;
+}
+
+/* QTabBar */
+QTabBar::tab {
+    min-width: 100%;
+    min-height: 40px;
+    background-color: #ffffff;
+    margin: 0 10px 5px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #333333;
+}
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+/* QSpinBox and QLineEdit */
+QSpinBox,
+QLineEdit {
+    font-size: 20px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+QSpinBox:hover,
+QLineEdit:hover {
+    border-color: #aaa;
+}
+
+
+QSpinBox:focus,
+QLineEdit:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* QLabel */
+QLabel {
+    font-size: 20px;
+}
+
+/* QCheckBox */
+QCheckBox {
+    font-size: 20px;
+}
+
+#openConfigFolderButton {
+    min-width: 40px;
+    max-height: 40px;
+    min-height: 40px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 2px solid #007aff;
+    color: #007aff;
+}
+
+#openConfigFolderButton:hover, #openConfigFolderButton:pressed {
+    font-size: 20px;
+    background-color: #f7f7f7;
+    border: 2px solid #4c94ff;
+    color: #007aff;
+}
+
+#apply {
+    margin: 0 0 0 20px;
+}
+
+#cancel {
+    margin: 0 20px 0 0;
+}
+
+#apply, #cancel {
+    min-width: 120px;
+    max-height: 40px;
+    min-height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #007aff;
+    color: #ffffff;
+}
+
+#apply:hover, #cancel:hover, #apply:pressed, #cancel:pressed {
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #4c94ff;
+    color: #f7f7f7;
+}
+
+#open_folder_button {
+    min-width: 60px;
+    max-width: 60px;
+    max-height: 30px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 2px solid #007aff;
+    color: #007aff;
+}
+
+#open_folder_button:hover, #open_folder_button:pressed {
+    background-color: #f7f7f7;
+    border: 2px solid #4c94ff;
+    color: #007aff;
+}
+
+
